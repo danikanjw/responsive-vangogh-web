@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Van Gogh Profile</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container" id="home">
+        <nav class="navbar">
+          <input type="checkbox" id="toggle" />
+          <label for="toggle"
+            ><i class="fa-solid fa-bars" style="color: #ffffff"></i
+          ></label>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#biography">Biography</a></li>
+            <li><a href="#arts">Arts</a></li>
+          </ul>
+        </nav>
+        <div class="arrow l" onclick="prev()">
+          <i class="fa-solid fa-chevron-left fa-2xl" style="color: #ffffff"></i>
+        </div>
+        <div class="slide slide-1 active">
+          <div class="caption">
+            <h3>Vincent van Gogh</h3>
+            <p>
+              Dutch painter, generally considered the greatest after Rembrandt
+              van Rijn, and one of the greatest of the Post-Impressionists.
+            </p>
+          </div>
+        </div>
+        <div class="slide slide-2">
+          <div class="caption">
+            <h3>“Art is to console those who are broken by life.”</h3>
+            <p>― Vincent van Gogh</p>
+          </div>
+        </div>
+        <div class="slide slide-3">
+          <div class="caption">
+            <h3>Starry Night</h3>
+            <p>
+              The Starry Night, a moderately abstract landscape painting (1889)
+              of an expressive night sky over a small hillside village, one of
+              Dutch artist Vincent van Gogh’s most celebrated works.
+            </p>
+          </div>
+        </div>
+        <div class="arrow r" onclick="next()">
+          <i
+            class="fa-solid fa-chevron-right fa-2xl"
+            style="color: #ffffff"
+          ></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="content">
+        <article id="biography" class="card">
+          <h2>Biography</h2>
+          <div class="biography-content">
+            <img
+              src="assets/image/potato-eaters.jpg"
+              alt="Sejarah"
+              class="featured-image"
+            />
+            <p>
+              Vincent van Gogh was a Dutch painter who is widely regarded as one
+              of the most influential and innovative artists of the 19th
+              century. He was born on March 30, 1853, in Zundert, Netherlands,
+              to a Protestant pastor and his wife. He had a passion for drawing
+              since childhood and worked as an art dealer in his early
+              adulthood. He later became interested in religion and spent some
+              time as a missionary in Belgium.<br />
+              Van Gogh decided to pursue painting as a career in 1881, with the
+              support of his younger brother Theo, who was also an art dealer.
+              He experimented with various styles and techniques, influenced by
+              the Impressionists, the Barbizon school, and Japanese prints. He
+              moved to Paris in 1886, where he met other avant-garde artists
+              such as Paul Gauguin, Émile Bernard, and Henri de
+              Toulouse-Lautrec. He developed his distinctive use of bright and
+              expressive colors, thick and swirling brushstrokes, and simplified
+              forms. <br />
+              In 1888, van Gogh moved to Arles, in the south of France, hoping
+              to create an artistic community with Gauguin. He painted some of
+              his most famous works there, such as Sunflowers, The Starry Night,
+              and Bedroom in Arles. However, his mental health deteriorated and
+              he suffered from episodes of depression, anxiety, and
+              hallucinations. He famously cut off part of his left ear after a
+              quarrel with Gauguin in December 1888. He was hospitalized several
+              times and eventually admitted himself to the asylum of
+              Saint-Paul-de-Mausole in Saint-Rémy-de-Provence in May 1889.
+              <br />
+              Van Gogh continued to paint prolifically during his stay at the
+              asylum, producing masterpieces such as Irises, The Church at
+              Auvers, and Wheatfield with Crows. He also wrote many letters to
+              his brother and friends, expressing his thoughts and feelings
+              about his art and life. He died on July 29, 1890, at the age of
+              37, from a self-inflicted gunshot wound to the chest. He was
+              buried next to his brother Theo, who died six months later, in
+              Auvers-sur-Oise, near Paris. <br />
+              Van Gogh’s art was largely ignored and misunderstood during his
+              lifetime, and he sold only one painting. He was posthumously
+              recognized as a pioneer of modern art and a major influence on
+              Expressionism, Fauvism, and other movements. His works are among
+              the most popular and expensive in the world, and he is widely
+              celebrated as a genius and a tragic hero.
+            </p>
+          </div>
+        </article>
+
+        <article id="arts" class="card">
+          <h2>Arts</h2>
+          <div class="art-content">
+            <p>
+              Vincent van Gogh was one of the most influential and prolific
+              artists of the 19th century. His paintings and drawings are widely
+              admired for their expressive use of color, brushwork, and emotion.
+              Van Gogh created over 2,000 artworks in his short but intense
+              career, ranging from landscapes and still lifes to portraits and
+              self-portraits. He also experimented with different styles and
+              techniques, such as realism, post-impressionism,
+              neo-impressionism, japonism, and cloisonnism. In this section, you
+              will find some of his masterpieces and learn more about his
+              artistic vision and legacy.
+            </p>
+
+            <section class="art-card">
+              <img
+                src="assets/image/the-starry-night.jpg"
+                alt="Starry Night"
+                class="featured-image"
+              />
+
+              <div class="text-content">
+                <h3>Starry Night</h3>
+                <p>
+                  Starry Night depicts a dreamy interpretation of the artist's
+                  asylum room's sweeping view of Saint-Rémy-de-Provence. Though
+                  Van Gogh revisited this scene in his work on several
+                  occasions, "Starry Night" is the only nocturnal study of the
+                  view. Thus, in addition to descriptions evident in the myriad
+                  of letters he wrote to his brother, Theo, it offers a rare
+                  nighttime glimpse into what the artist saw while in isolation.
+                  "Through the iron-barred window I can make out a square of
+                  wheat in an enclosure," he wrote in May of 1889, "above which
+                  in the morning I see the sunrise in its glory." <br />
+                  An end-of-the-world cataclysm invades Van Gogh's Starry Night,
+                  one of apocalypse filled with melting aerolites and comets
+                  adrift. One has the impression that the artist has expelled
+                  his inner conflict onto a canvas. Everything here is brewed in
+                  a huge cosmic fusion. The sole exception is the village in the
+                  foreground with its architectural elements.
+                </p>
+              </div>
+            </section>
+
+            <section class="art-card">
+              <img
+                src="assets/image/the-starry-night-over-the-rhone.jpg"
+                alt="The Starry Night Over The Rhone"
+                class="featured-image"
+              />
+
+              <div class="text-content">
+                <h3>The Starry Night Over The Rhone</h3>
+                <p>
+                  Starry Night Over the Rhone was painted at a spot on the banks
+                  of river which was only a minute or two's walk from the The
+                  Yellow House on the Place Lamartine which Van Gogh was renting
+                  at the time. The night sky and the effects of light at night
+                  provided the subject for some of his more famous paintings,
+                  including The Starry Night, the most famous Van Gogh night
+                  stars painting. <br />
+                  The challenge of painting at night intrigued Van Gogh. The
+                  vantage point he chose for "Starry Night Over the Rhone"
+                  allowed him to capture the reflections of the gas lighting in
+                  Arles across the glimmering blue water of the Rhone. In the
+                  foreground, two lovers stroll by the banks of the river. Here
+                  his stars glow with a luminescence, shining from the dark,
+                  blue and velvety night sky. Dotted along the banks of the
+                  Rhone houses also radiate a light that reflects in the water
+                  and adds to the mysterious atmosphere of the painting.
+                </p>
+              </div>
+            </section>
+
+            <section class="art-card">
+              <img
+                src="assets/image/the-bedroom-at-arles.jpg"
+                alt="The Bedroom At Arles"
+                class="featured-image"
+              />
+              <div class="text-content">
+                <h3>The Bedroom At Arles</h3>
+                <p>
+                  To Van Gogh this picture was an expression of 'perfect rest',
+                  or 'sleep in general'. The bright, cheerful little room has
+                  become a field of rapid convergences, sharp angles, and
+                  contrasts of high color. The perspective vision of the walls
+                  and bed is as exciting as one of his deep landscapes, where we
+                  are carried headlong to the horizon. But in such a view with
+                  'a rushing series of lines, furrows rising high on the
+                  canvas', Van Gogh found an expression of 'calmness, of great
+                  peace.' These surprising reactions permit us to see the
+                  spontaneous intensification of movement in his rendering of
+                  things. For his high-strung nature, the most relaxed
+                  perceptions were already charged and restless. But his feeling
+                  of repose in paintings so full of movement is also the outcome
+                  of a kind of cathartic process; by projecting movement into
+                  nature, he is relieved of tensions and wins a real peace.
+                </p>
+              </div>
+            </section>
+          </div>
+        </article>
+      </div>
+
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Vincent van Gogh</h2>
+            <figure>
+              <img
+                src="assets/image/self-portrait.jpg"
+                alt="Vincent Van Gogh Self Portrait"
+              />
+              <figcaption>Self Portrait by Vincent Van Gogh</figcaption>
+            </figure>
+          </header>
+
+          <section>
+            <h3>Information</h3>
+
+            <table>
+              <tr>
+                <th>Born</th>
+                <td>March 30, 1853, Zundert, Netherlands</td>
+              </tr>
+              <tr>
+                <th>Died</th>
+                <td>
+                  July 29, 1890, Auvers-sur-Oise, near Paris, France (aged 37)
+                </td>
+              </tr>
+              <tr>
+                <th>Notable Works</th>
+                <td>
+                  “Portrait of Dr. Gachet”, “Starry Night over the Rhône”, “The
+                  Potato Eaters”, “The Starry Night”
+                </td>
+              </tr>
+              <tr>
+                <th>Movement/ Style</th>
+                <td>Expressionism, Post-Impressionism, Symbolism</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Van Gogh Profile &#169; 2024</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
